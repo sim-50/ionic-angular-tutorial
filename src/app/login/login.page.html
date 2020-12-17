@@ -1,0 +1,49 @@
+
+  <ion-header [translucent]="true" color = 'primary'>
+    <ion-toolbar color = 'primary'>
+      <ion-title size-md = "small">
+        Report It!
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md = '6' offset-md = '3'>
+          <strong margin>How does Raynaud attack your body today?</strong>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-md = '6' offset-md = '3'>
+          <p margin size = "">Before reporting your symptom, please log in here firstly.</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-md = '6' offset-md = '3'>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+                Log in
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item>
+                <ion-label position="floating">Username: </ion-label>
+                <ion-input type='text' [(ngModel)]="inputValue" id="input-name"></ion-input>
+              </ion-item>
+              <div class="submit">
+                <ion-button fill = "outline" color = "primary" (click) = onClickSubmit() [routerLink]="['/home']">
+                  <ion-icon slot="start" name="log-in-outline"></ion-icon>Submit
+                </ion-button>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- <div class="intro">
+      
+    </div> -->
+  </ion-content>
+
+
