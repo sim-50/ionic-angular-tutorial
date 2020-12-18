@@ -7,20 +7,6 @@ import { Record } from './record.model';
 export class RecordsService {
   private records: Record[] = [
     {
-      //id: 1,
-      date: '2020-12-13',
-      time: '10:00',
-      location: 'Inside',
-      severity: 2,
-    },
-    {
-      //id: 2,
-      date: '2020-12-13',
-      time: '16:00',
-      location: 'Outside',
-      severity: 1,
-    },
-    {
       //id: 3,
       date: '2020-12-14',
       time: '14:00',
@@ -89,7 +75,35 @@ export class RecordsService {
       time: '23:00',
       location: 'Inside',
       severity: 4,
-    }
+    },
+    {
+      //id: 1,
+      date: '2020-12-20',
+      time: '10:00',
+      location: 'Inside',
+      severity: 2,
+    },
+    {
+      //id: 2,
+      date: '2020-12-20',
+      time: '16:00',
+      location: 'Outside',
+      severity: 1,
+    },
+    {
+      //id: 1,
+      date: '2020-12-21',
+      time: '11:00',
+      location: 'Inside',
+      severity: 2,
+    },
+    {
+      //id: 2,
+      date: '2020-12-21',
+      time: '21:00',
+      location: 'Outside',
+      severity: 1,
+    },
   ]
   constructor() { }
   //get all Records from the same date

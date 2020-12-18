@@ -10,7 +10,18 @@
 </ion-header>
 
 <ion-content>
-  <ion-list-header></ion-list-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col  id= "subtitle" size = "8">
+        <strong>Health Situation in Past 7 Days</strong>
+      </ion-col>
+      <ion-col class="ion-float-end">
+        <div>
+          <p style="margin: 0px; margin-right: 1%; text-align: end;">Hello, {{username}}!</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <ion-card class="chart-card">
     <ion-card-header>
       <ion-card-subtitle>Number of Attacks per day for</ion-card-subtitle>

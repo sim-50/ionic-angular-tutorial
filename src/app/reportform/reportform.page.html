@@ -8,18 +8,18 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+<!-- (ionChange)="change(datePicker)" -->
 <ion-content>
   <ion-row>
     <ion-col>
       <ion-list>
         <ion-item>
           <ion-label>Date</ion-label>
-          <ion-datetime [(ngModel)]="selectedDate" placeholder="Select Date"></ion-datetime>
+          <ion-datetime [(ngModel)]="selectedDate" placeholder="Select Date" ></ion-datetime>
         </ion-item>
         <ion-item>
           <ion-label>Time</ion-label>
-          <ion-datetime [(ngModel)]="selectedTime" display-format="HH:mm" picker-format="HH:mm" placeholder="Select Time"></ion-datetime>
+          <ion-datetime [(ngModel)]="selectedTime" display-format="HH:mm" placeholder="Select Time"></ion-datetime>
         </ion-item>
         <ion-item>
           <ion-label>Location</ion-label>

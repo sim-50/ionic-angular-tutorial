@@ -1,3 +1,4 @@
+import { StorageService } from './../storage.service';
 import { RecordsService } from './../records.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
@@ -10,13 +11,16 @@ import * as moment from 'moment';
 })
 export class WeeklysummaryPage implements OnInit {
   @ViewChild('barChart') barChart;
-
+  username: string = '';
   bars: 7;
   colorArray: any;
   curDate: string = moment().format();
-  constructor(private recordsService: RecordsService) { }
+  constructor(private recordsService: RecordsService, private storage: StorageService) { }
 
   ngOnInit() {
+    this.storage.get('username').then(username =>{
+      this.username = username;
+    })
   }
 
   ionViewDidEnter(){

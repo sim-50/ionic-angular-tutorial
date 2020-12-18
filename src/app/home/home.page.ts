@@ -1,5 +1,4 @@
 import { StorageService } from '../storage.service';
-//import { Storage } from '@ionic/storage';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -14,7 +13,10 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.storage.get('username').then(username =>{
       this.username = username;
-      console.log(this.username);
+      //console.log(this.username);
     })
+  }
+  onClickLogout(){
+    this.storage.clear();
   }
 }
