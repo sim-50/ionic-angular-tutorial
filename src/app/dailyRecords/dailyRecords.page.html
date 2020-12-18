@@ -27,16 +27,18 @@
         <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="curDate" ></ion-datetime>
       </ion-col>
     </ion-row>
+    <!-- style="padding-left: 20px; padding-right: 20px;" -->
+    <!-- style="padding-left: 25px; padding-right: 25px;" -->
     <ion-item>
       <ion-row class="ion-align-items-center">
-        <ion-col col-6>
-          <div style="padding-left: 20px; padding-right: 20px;">Time</div>
+        <ion-col style="padding-left: 20px; padding-right: 20px;">
+          <div>Time</div>
         </ion-col>
-        <ion-col col-6>
-          <div style="padding-left: 20px; padding-right: 20px;">Location</div>
+        <ion-col style="padding-left: 20px; padding-right: 20px;">
+          <div>Location</div>
         </ion-col>
-        <ion-col col-6 style="padding-left: 20px;padding-right: 20px;">
-          <div style="padding-left: 25px; padding-right: 25px;">Severity</div>
+        <ion-col style="padding-left: 25px; padding-right: 25px;">
+          <div>Severity</div>
         </ion-col>
       </ion-row>
     </ion-item>
@@ -44,14 +46,14 @@
       <ion-item-sliding *ngFor="let record of records">
         <ion-item>
           <ion-row class="ion-align-items-center">
-            <ion-col col-6>
-              <div style="padding-left: 20px; padding-right: 20px;">{{record.time}}</div>
+            <ion-col col-6 style="padding-left: 20px; padding-right: 20px;">
+              <div>{{record.time}}</div>
             </ion-col>
-            <ion-col col-6>
-              <div style="padding-left: 20px; padding-right: 20px;"> {{record.location}}</div>
+            <ion-col col-6 style="padding-left: 20px; padding-right: 20px;">
+              <div> {{record.location}}</div>
             </ion-col>
-            <ion-col  col-6 style="padding-left: 20px;padding-right: 20px;">
-              <div style="padding-left: 25px; padding-right: 25px;">{{record.severity}} out of 5</div>
+            <ion-col  col-6 style="padding-left: 25px; padding-right: 25px;">
+              <div>{{record.severity}} out of 5</div>
             </ion-col>
           </ion-row>
         </ion-item>
