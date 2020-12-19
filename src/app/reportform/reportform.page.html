@@ -23,27 +23,24 @@
         </ion-item>
         <ion-item>
           <ion-label>Location</ion-label>
-          <ion-select [(ngModel)]="selectedLocation" placeholder="Select Location">
+          <ion-select [(ngModel)]="selectedLocation" placeholder="In the room?">
             <ion-select-option value="Inside">Inside</ion-select-option>
             <ion-select-option value="Outside">Outside</ion-select-option>
           </ion-select>
         </ion-item>
         <ion-item>
           <ion-label>Severity</ion-label>
-          <ion-select [(ngModel)]="selectedSeverity" placeholder="Select Severity">
-            <ion-select-option [value]=1>1</ion-select-option>
-            <ion-select-option [value]=2>2</ion-select-option>
-            <ion-select-option [value]=3>3</ion-select-option>
-            <ion-select-option [value]=4>4</ion-select-option>
-            <ion-select-option [value]=5>5</ion-select-option>
-          </ion-select>
+          <ion-range [(ngModel)]="selectedSeverity" min=1 max=10 step=1 name="selectedSeverity" ticks="true" snaps="true" pin="true" >
+            <ion-label slot="start">1</ion-label>
+            <ion-label slot="end">10</ion-label>
+          </ion-range>
         </ion-item>
       </ion-list>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col>
-      <ion-button expand="block" color = "primary" (click) = onClickSubmit()>Submit</ion-button>
+      <ion-button expand="block" color = "primary" (click) = onClickSubmit()>Save</ion-button>
     </ion-col>
   </ion-row>
 </ion-content>
