@@ -7,7 +7,7 @@ This project is an Android platform mobile app written by Ionic &amp; Angular wi
 1. Visual Studio Code <br />
 2. Android Studio <br />
 
-## lib installed for 
+## lib installed for project 
 1. chart.js : used for data visualization<br />
 $ npm install chart.js --save <br /> 
 
